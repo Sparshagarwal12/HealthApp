@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".hospital_detail"
+    android:background="@drawable/main_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:paddingBottom="40dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/hospital_detail"/>
+        <LinearLayout
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="अस्पताल की  जानकारी "
+            android:textSize="40dp" /></LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/layout1"
+                android:weightSum="2"
+                android:layout_marginTop="200dp"
+                android:layout_centerHorizontal="true">
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/spinner1"
+                android:layout_marginLeft="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="top|left"
+                android:background="@drawable/spinner_background"
+                android:layout_weight="1"
+                />
+
+                <Spinner
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/spinner2"
+                    android:background="@drawable/spinner_background"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top|right"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@+id/layout1"
+            android:id="@+id/layout2"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/spinner3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="top|left"
+                android:background="@drawable/spinner_background"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/spinner4"
+                android:background="@drawable/spinner_background"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="top|right"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layout4"
+            android:gravity="center">
+             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Details"
+                android:id="@+id/submit_details"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/layout3"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hospital_vibhag"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="विभाग की  जानकारी "
+                android:textSize="40dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

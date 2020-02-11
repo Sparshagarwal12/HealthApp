@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_background"
+    android:layout_height="match_parent"
+    tools:context=".medicine_form">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:text="Medicine Donate"/>
+        <LinearLayout
+            android:id="@+id/medicine_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:id="@+id/drug_name"
+                android:background="@drawable/button_shape"
+                android:hint="Drug Name and Strength"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_background"
+                android:id="@+id/drug_type"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_background"
+                android:id="@+id/drug_pack"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:id="@+id/medicine_diease"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="Diease"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:id="@+id/medicine_expire"
+                android:layout_marginTop="20dp"
+                android:hint="Expiry Date"
+                android:background="@drawable/button_shape"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/medicine_batch"
+                android:hint="Batch Number"
+                android:background="@drawable/button_shape"/>
+        </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:padding="10dp"
+                android:id="@+id/submit_medicine_form"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</ScrollView>
