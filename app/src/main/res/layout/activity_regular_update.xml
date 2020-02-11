@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".regular_update">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="रेगुलर अपडेट "
+            android:gravity="center"
+            android:textSize="40dp"
+            android:id="@+id/ward_update"
+            >
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                <EditText
+                    android:id="@+id/today_date"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_shape"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="आज की तारिक(DD/MM/YYYY)" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/doctor_name_regular"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:hint="डॉक्टर का नाम"
+                android:background="@drawable/button_shape"
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/patient_name_regular"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:hint="रोगी का नाम" />
+            <EditText
+                android:id="@+id/Mob_number_regular"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="रोगी का मोबाइल नंबर दर्ज करें"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/aadhar_number_regular"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="आधार नंबर"
+                android:inputType="number" />
+                <EditText
+                    android:id="@+id/discharge_date_regular"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_shape"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="डिस्चार्ज की तारिक (DD/MM/YYYY)" />
+            <EditText
+                android:id="@+id/nurse_name_regular"
+                android:background="@drawable/button_shape"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="नर्स का नाम" />
+            <EditText
+                android:id="@+id/parigen_name_regular"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="सहायक का नाम" />
+            <EditText
+                android:id="@+id/parigen_phone_regular"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="सहायक का मोबाइल नंबर दर्ज करें" />
+            <EditText
+                android:id="@+id/diease_regular"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="बीमारी का नाम" />
+            <EditText
+                android:id="@+id/treatment_regular"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:gravity="top"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="इलाज" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="डिस्चार्ज डिटेल :"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/regular_yes"
+                    android:text="हां"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/regular_no"
+                    android:layout_weight="1"
+                    android:text="ना"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/regular_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Submit" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

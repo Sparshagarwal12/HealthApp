@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/cardbackground"
+    android:layout_marginTop="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/cardclick"
+        android:paddingLeft="20dp"
+        android:background="@drawable/cardbackground"
+        android:orientation="vertical">
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:src="@drawable/ic_account_circle_black_24dp"/>-->
+        <TextView
+            android:id="@+id/doctor_name_card"
+            android:textSize="25sp"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+        <TextView
+            android:id="@+id/address_card"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>

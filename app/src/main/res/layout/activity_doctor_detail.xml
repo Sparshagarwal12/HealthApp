@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".doctor_detail"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/doctor_detail"
+            tools:ignore="VectorDrawableCompat" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:text="डॉक्टर का विवरण"
+            android:textSize="30dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_shape"
+            android:layout_height="55dp"
+            android:hint=" हॉस्पिटल नाम"/>
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/spin1_type"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/edit1"
+            android:layout_width="340dp"
+            android:background="@drawable/spinner_background"
+            android:layout_height="30dp"
+            android:hint=" हॉस्पिटल प्रकार "/>
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edit2"
+            android:layout_below="@+id/spin1_type"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_shape"
+            android:layout_height="55dp"
+            android:hint=" हॉस्पिटल का पता"/>
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="नाम "
+            android:layout_below="@+id/edit2"
+            android:id="@+id/edit3"/>
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edit4"
+            android:layout_below="@+id/edit3"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="55dp"
+            android:hint="आधार नंबर "/>
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edit5"
+            android:layout_below="@+id/edit4"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="55dp"
+            android:hint="फ़ोन नंबर"/>
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edit6"
+            android:background="@drawable/button_shape"
+            android:layout_below="@+id/edit5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="डिग्री"/>
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/spin2_prakar"
+            android:layout_below="@+id/edit6"
+            android:background="@drawable/spinner_background"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="प्रकार"/>
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/spin3_specialisation"
+            android:layout_below="@+id/spin2_prakar"
+            android:background="@drawable/spinner_background"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="डॉक्टर की विशेषज्ञता"/>
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edit7"
+            android:layout_below="@+id/spin3_specialisation"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="पता "/>
+        <Spinner
+            android:id="@+id/hospital_state"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/spinner_background"
+            android:layout_below="@+id/edit7"
+            android:layout_marginTop="20dp"/>
+        <Spinner
+            android:id="@+id/hospital_dist"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/spinner_background"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/hospital_state"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edit8"
+            android:inputType="number"
+            android:background="@drawable/button_shape"
+            android:layout_below="@+id/hospital_dist"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="पिनकोड "/>
+
+<!--        <TextView-->
+<!--            android:padding="10dp"-->
+<!--            android:id="@+id/edit9"-->
+<!--            android:layout_below="@+id/edit8"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/button_shape"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:hint="फोटो डालें"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/choose"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="Choose File" />-->
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit8"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+        <Button
+            android:id="@+id/submit_doctor_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

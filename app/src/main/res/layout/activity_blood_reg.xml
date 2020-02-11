@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration_Activity.blood_reg"
+    tools:ignore="ExtraText"
+    android:background="@drawable/blood_bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/health1"
+            tools:ignore="VectorDrawableCompat" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <EditText
+                android:id="@+id/blood_bank_name"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="10dp"
+                android:hint=" ब्लड बैंक का नाम दर्ज करें"/>
+
+            <EditText
+            android:id="@+id/blood_email"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="10dp"
+            android:hint="ऑपरेटर ईमेल आईडी दर्ज करें"/>
+
+        <EditText
+            android:id="@+id/blood_operator_Name"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="ऑपरेटर का नाम दर्ज करें"/>
+        <EditText
+            android:id="@+id/blood_operator_aadhar"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:hint="ऑपरेटर आधार नंबर दर्ज करें"/>
+
+            <EditText
+                android:id="@+id/blood_operator_mobile"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="ऑपरेटर मोबाइल नंबर दर्ज करें"/>
+
+
+            <EditText
+            android:id="@+id/blood_password"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="पासवर्ड "/>
+
+        <EditText
+            android:id="@+id/blood_cnf_password"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="सुनिश्चित पासवर्ड "/>
+        <EditText
+            android:id="@+id/blood_bank_tehsil"
+            android:layout_width="350dp"
+            android:background="@drawable/button_shape"
+            android:layout_height="55dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="तहसील दर्ज करें"/>
+        <EditText
+            android:id="@+id/blood_bank_village"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="ब्लड बैंक का ग्रामीण/शहर दर्ज करें"/>
+            <EditText
+
+                android:id="@+id/blood_bank_block"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="ब्लड बैंक का पता दर्ज करें"/>
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:id="@+id/lat_blood"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:hint="Latitude">-->
+<!--            </EditText>-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:id="@+id/lon_blood"-->
+<!--                android:background="@drawable/button_shape"-->
+<!--                android:hint="Longitude"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/blood_state"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <Spinner
+                    android:id="@+id/blood_dist"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/lat_blood"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_shape"
+                    android:layout_height="50dp"
+                    android:hint="Latitude">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/lon_blood"
+                    android:background="@drawable/button_shape"
+                    android:hint="Longitude">
+
+                </TextView>
+
+            </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="लोकेशन के लिए क्लिक करे "
+            android:textSize="16dp"
+            android:background="@drawable/bg1"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/get_loc_blood"
+            />
+            <Button
+                android:id="@+id/button_submit_blood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:background="@drawable/bg1"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="पंजीकरण करें"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

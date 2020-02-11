@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".normal_update">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal Update"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:id="@+id/ward_update"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/bed_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_background"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <Spinner
+                android:id="@+id/ward_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_background"
+                android:inputType="number"
+                android:padding="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/jatilta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_background"
+                android:inputType="number"
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:hint="डॉक्टर का नाम"
+                android:background="@drawable/button_shape"
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/patient_name"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:hint="रोगी का नाम" />
+            <EditText
+                android:id="@+id/Mob_number"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="रोगी का मोबाइल नंबर दर्ज करें"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/aadhar_number"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="आधार नंबर"
+                android:inputType="number" />
+                <EditText
+                    android:id="@+id/admit_date"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_shape"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="प्रवेश की तारीख" />
+            <EditText
+                android:id="@+id/nurse_name"
+                android:background="@drawable/button_shape"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="नर्स का नाम" />
+            <EditText
+                android:id="@+id/parigen_name"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="सहायक का नाम" />
+            <EditText
+                android:id="@+id/parigen_phone"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="सहायक का मोबाइल नंबर दर्ज करें" />
+
+
+            <EditText
+                android:id="@+id/diease"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="बीमारी का नाम" />
+
+            <EditText
+                android:id="@+id/treatment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:gravity="top"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="20dp"
+                android:hint="इलाज" />
+
+            <Button
+                android:id="@+id/normal_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="सबमिट " />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
