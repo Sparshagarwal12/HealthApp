@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.avi_hi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Health"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".health_cat"></activity>
+        <activity android:name=".Doctor_Get_Activity.Doctor_show_detail" />
+        <activity android:name=".patient_inner_choices" />
+        <activity android:name=".Doctor_Get_Activity.doctordetailshow" />
+        <activity android:name=".Hospital_Get_Activity.Hospital_show_detail" />
+        <activity android:name=".Hospital_Get_Activity.hospital_show_main" />
+        <activity android:name=".hospital_enquiry" />
+        <activity android:name=".Login_Activity.donor_login" />
+        <activity android:name=".Registration_Activity.donor_reg" />
+        <activity android:name=".regular_update" />
+        <activity android:name=".driver_duty_chart" />
+        <activity android:name=".doctor_duty_chart" />
+        <activity android:name=".blood_page" />
+        <activity android:name=".Registration_Activity.test_register" />
+        <activity android:name=".Registration_Activity.lab_operator_reg" />
+        <activity android:name=".medicine_form" />
+        <activity android:name=".blood_total_update" />
+        <activity android:name=".donor_inner" />
+        <activity android:name=".processed_blood" />
+        <activity android:name=".take_blood" />
+        <activity android:name=".blood_donate" />
+        <activity android:name=".blood_stock" />
+        <activity android:name=".donor_selcet" />
+        <activity android:name=".blood_update" />
+        <activity android:name=".donor_blood" />
+        <activity android:name=".Registration_Activity.operator_reg" />
+        <activity android:name=".patient_choice1" />
+        <activity android:name=".Login_Activity.patient_login" />
+        <activity android:name=".Registration_Activity.patient_reg" />
+        <activity android:name=".emergency" />
+        <activity android:name=".Registration_Activity.hospital_reg" />
+        <activity android:name=".hospital_test" />
+        <activity android:name=".hospital_detail" />
+        <activity android:name=".ward_update" />
+        <activity android:name=".Registration_Activity.community_reg" />
+        <activity android:name=".hospital_ward" />
+        <activity android:name=".hospital_update" />
+        <activity android:name=".hospital_gui" />
+        <activity android:name=".Login_Activity.blood_login" />
+        <activity android:name=".doctor_detail" />
+        <activity android:name=".blood_inner" />
+        <activity android:name=".Registration_Activity.blood_reg" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ambulance_facility" />
+        <activity android:name=".ambulance_inner" />
+        <activity android:name=".Login_Activity.ambulance_login" />
+        <activity android:name=".hospital_tika" />
+        <activity android:name=".hospital_inner" />
+        <activity android:name=".normal_update" />
+        <activity android:name=".Login_Activity.hospital_login" />
+        <activity android:name=".Login_Activity.MainLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

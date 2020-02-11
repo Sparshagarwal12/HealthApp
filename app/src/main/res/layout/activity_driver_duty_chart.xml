@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".driver_duty_chart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Duty Chart"
+            android:gravity="center"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:padding="10dp"
+                android:id="@+id/driver_id_chart"
+                android:background="@drawable/button_shape"
+                android:hint="Driver Id"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:id="@+id/driver_name_chart"
+                android:background="@drawable/button_shape"
+                android:hint="Driver Name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:id="@+id/driver_ambulance_chart"
+                android:background="@drawable/button_shape"
+                android:hint="Ambulance Number"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:id="@+id/driver_aadhar_chart"
+                android:background="@drawable/button_shape"
+                android:hint="Driver Aadhar"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/spinner_background"
+                android:id="@+id/driver_ambulance_type"
+                android:layout_marginTop="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:id="@+id/driver_time_from"
+                android:background="@drawable/button_shape"
+                android:hint="From"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/driver_time_to"
+                android:padding="10dp"
+                android:background="@drawable/button_shape"
+                android:hint="To"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/submit_driver_chart"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

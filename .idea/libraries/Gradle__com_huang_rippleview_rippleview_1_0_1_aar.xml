@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huang.rippleview:rippleview:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c0c3d72fc581c3053fa8dd581d7e1b12/jetified-rippleview-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c0c3d72fc581c3053fa8dd581d7e1b12/jetified-rippleview-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huang.rippleview/rippleview/1.0.1/d8e4644abdf5d19bcf889c9d66f2ad7da6550fb/rippleview-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.huang.rippleview/rippleview/1.0.1/2fc176e457393e0a2725f7399abc1d47a9c4ca92/rippleview-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
